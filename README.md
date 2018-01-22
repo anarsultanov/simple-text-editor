@@ -1,9 +1,9 @@
-#QOGAL
-##Simple Text Editor
+# QOGAL
+## Simple Text Editor
 
 This project demonstrates different data structures and performance at work with them.
 
-![Скриншот](https://github.com/AnarSultanov/SimpleTextEditor/raw/master/screenshot.png)
+![Screenshot](https://github.com/AnarSultanov/SimpleTextEditor/raw/master/screenshot.png)
 
 For text processing in project implemented class SimpleDocument, that gives the opportunity to count the number of syllables, words and sentences in a single pass through the text and used to calculate Flesch score (readability index) of the text. Also in this class implemented methods to separate text by tokens and check if a string is a word.
 
