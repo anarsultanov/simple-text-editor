@@ -49,11 +49,11 @@ public class About extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new BorderLayout(0, 0));
-		
+
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 		contentPane.add(scrollPane);
-		
+
 		JTextArea license = new JTextArea();
 		license.setEditable(false);
 		license.setFont(new Font("Tahoma", Font.PLAIN, 12));
@@ -62,33 +62,33 @@ public class About extends JFrame {
 		license.setLineWrap(true);
 		license.setCaretPosition(0);
 		scrollPane.setViewportView(license);
-		
+
 		JPanel panel = new JPanel();
 		panel.setPreferredSize(new Dimension(10, 70));
 		panel.setMinimumSize(new Dimension(10, 80));
 		scrollPane.setColumnHeaderView(panel);
 		panel.setLayout(null);
-		
+
 		JLabel lblQo = new JLabel("QOGAL");
 		lblQo.setForeground(new Color(34, 139, 34));
 		lblQo.setFont(new Font("Tahoma", Font.BOLD, 22));
 		lblQo.setBounds(177, 0, 84, 37);
 		panel.add(lblQo);
-		
+
 		JLabel lblSimpleTextEditor = new JLabel("Simple Text Editor");
 		lblSimpleTextEditor.setFont(new Font("Tahoma", Font.BOLD, 16));
 		lblSimpleTextEditor.setBounds(141, 33, 158, 22);
 		panel.add(lblSimpleTextEditor);
-		
+
 		Label label = new Label("Author:  Anar Sultanov");
 		label.setBounds(283, 54, 122, 16);
 		panel.add(label);
-		
+
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(About.class.getResource("/data/icon.png")));
+		lblNewLabel.setIcon(new ImageIcon(About.class.getResource("/icon.png")));
 		lblNewLabel.setBounds(38, 1, 63, 69);
 		panel.add(lblNewLabel);
-		
+
 		Button button = new Button("OK");
 		contentPane.add(button, BorderLayout.SOUTH);
 		button.addActionListener(new ActionListener() {
